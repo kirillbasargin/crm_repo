@@ -151,6 +151,11 @@
 						<CommandName>Form.Command.ОбновлениеСделки</CommandName>
 						<ExtendedTooltip name="ФормаОбновлениеСделкиРасширеннаяПодсказка" id="407"/>
 					</Button>
+					<Button name="ФормаПолуитьДанныеСделки" id="425">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПолуитьДанныеСделки</CommandName>
+						<ExtendedTooltip name="ФормаПолуитьДанныеСделкиРасширеннаяПодсказка" id="426"/>
+					</Button>
 				</ChildItems>
 			</Popup>
 		</ChildItems>
@@ -950,6 +955,11 @@
 																				<CommandName>Form.Command.ОбновлениеАнкеты</CommandName>
 																				<ExtendedTooltip name="ФормаОбновлениеАнкетыРасширеннаяПодсказка" id="405"/>
 																			</Button>
+																			<Button name="АнкетыПолучитьДанныеАнкеты" id="427">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ПолучитьДанныеАнкеты</CommandName>
+																				<ExtendedTooltip name="АнкетыПолучитьДанныеАнкетыРасширеннаяПодсказка" id="428"/>
+																			</Button>
 																			<Button name="АнкетыУдалениеАнкетыСозаемщика" id="410">
 																				<Type>CommandBarButton</Type>
 																				<CommandName>Form.Command.УдалениеАнкетыСозаемщика</CommandName>
@@ -1210,6 +1220,11 @@
 																		<CommandName>Form.Command.УдалениеДокументов</CommandName>
 																		<ExtendedTooltip name="ПрикрепленныеФайлыУдалениеДокументовРасширеннаяПодсказка" id="419"/>
 																	</Button>
+																	<Button name="ПрикрепленныеФайлыОтправитьДокументы" id="432">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ОтправитьДокументы</CommandName>
+																		<ExtendedTooltip name="ПрикрепленныеФайлыОтправитьДокументыРасширеннаяПодсказка" id="433"/>
+																	</Button>
 																</ChildItems>
 															</AutoCommandBar>
 															<ExtendedTooltip name="ПрикрепленныеФайлыРасширеннаяПодсказка" id="105"/>
@@ -1341,6 +1356,20 @@
 																	<EditMode>EnterOnInput</EditMode>
 																	<ContextMenu name="ПрикрепленныеФайлыАнкетаКонтекстноеМеню" id="368"/>
 																	<ExtendedTooltip name="ПрикрепленныеФайлыАнкетаРасширеннаяПодсказка" id="369"/>
+																</InputField>
+																<InputField name="ПрикрепленныеФайлыApplicationID" id="429">
+																	<DataPath>Объект.ПрикрепленныеФайлы.ApplicationID</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ID анкеты</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<TitleBackColor>style:CRM_ЦветГруппыФормы</TitleBackColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПрикрепленныеФайлыApplicationIDКонтекстноеМеню" id="430"/>
+																	<ExtendedTooltip name="ПрикрепленныеФайлыApplicationIDРасширеннаяПодсказка" id="431"/>
 																</InputField>
 																<InputField name="ПрикрепленныеФайлыДатаОтправки" id="156">
 																	<DataPath>Объект.ПрикрепленныеФайлы.create_date</DataPath>
@@ -2263,6 +2292,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПодписатьСогласиеКодомИзСМС</Action>
+		</Command>
+		<Command name="ПолуитьДанныеСделки" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полуить данные сделки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полуить данные сделки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолуитьДанныеСделки</Action>
+		</Command>
+		<Command name="ПолучитьДанныеАнкеты" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные анкеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные анкеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеАнкеты</Action>
+		</Command>
+		<Command name="ОтправитьДокументы" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьДокументы</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

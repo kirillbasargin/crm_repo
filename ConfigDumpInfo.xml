@@ -3703,8 +3703,8 @@
 		<Metadata name="CommonModule.УправлениеДоступомСлужебныйПовтИсп.Module" id="b0d9086f-cef7-47a8-ad62-d85fea28ebda.0" configVersion="4439a72d1a83af469eb53583b7cb8b8100000000"/>
 		<Metadata name="CommonModule.УправлениеЗаявкамиНаЗвонок" id="593c5fe4-12db-4efd-8980-2e752aca8fdd" configVersion="173caeb057ec4342bb2ae66ec5d8896b00000000"/>
 		<Metadata name="CommonModule.УправлениеЗаявкамиНаЗвонок.Module" id="593c5fe4-12db-4efd-8980-2e752aca8fdd.0" configVersion="327d712a404e6b4cabb33ba51ccb139d00000000"/>
-		<Metadata name="CommonModule.УправлениеИпотечнымиЗаявкамиДомКлик" id="37e8d07a-41b0-4b38-b1b7-2dd3d02b2bcd" configVersion="6ce0dc48883d584b8c4093069c52403300000000"/>
-		<Metadata name="CommonModule.УправлениеИпотечнымиЗаявкамиДомКлик.Module" id="37e8d07a-41b0-4b38-b1b7-2dd3d02b2bcd.0" configVersion="97f581bd2a32944894e9fbfe51f445d100000000"/>
+		<Metadata name="CommonModule.УправлениеИпотечнымиЗаявкамиДомКлик" id="37e8d07a-41b0-4b38-b1b7-2dd3d02b2bcd" configVersion="66d217d4f00b034497256f5cb26c32bd00000000"/>
+		<Metadata name="CommonModule.УправлениеИпотечнымиЗаявкамиДомКлик.Module" id="37e8d07a-41b0-4b38-b1b7-2dd3d02b2bcd.0" configVersion="9c034a53003a8f4e99c696e561e4aa1500000000"/>
 		<Metadata name="CommonModule.УправлениеКонтактнойИнформацией" id="3f3b592d-ca61-40c7-be1f-e5d3224a1eb3" configVersion="7b79379bd3a6aa43a0b0e6c6e5ded32600000000"/>
 		<Metadata name="CommonModule.УправлениеКонтактнойИнформацией.Module" id="3f3b592d-ca61-40c7-be1f-e5d3224a1eb3.0" configVersion="e9e1ee84cf828541a256fa49de34fa9600000000"/>
 		<Metadata name="CommonModule.УправлениеКонтактнойИнформациейКлиент" id="2c02a558-8d12-44cf-be6b-9c399b9032e5" configVersion="e1ee170aa57bd4429af4d6c22053574600000000"/>
@@ -6796,7 +6796,7 @@
 		<Metadata name="Document.ЗаявкаНаСделку.Form.ФормаСписка.Form" id="1ba0a8e8-53ab-4fcc-a52d-c22f775fc8f3.0" configVersion="3c035299c6fa7a4a808aceea6e3b451a00000000"/>
 		<Metadata name="Document.ЗаявкаНаСделку.ManagerModule" id="6e73f695-d2b8-4e41-ba27-974b7c0b3a29.2" configVersion="1aa6902f32d09d4c8f03330d5c965e2b00000000"/>
 		<Metadata name="Document.ЗаявкаНаСделку.ObjectModule" id="6e73f695-d2b8-4e41-ba27-974b7c0b3a29.0" configVersion="fdeabe269c16b941b28132573989ccaa00000000"/>
-		<Metadata name="Document.ИпотечнаяЗаявка" id="cc8a9536-4b81-4c1b-be0f-c62906c12605" configVersion="eecb9fba3189734c83b10ef0c1b8cddb00000000">
+		<Metadata name="Document.ИпотечнаяЗаявка" id="cc8a9536-4b81-4c1b-be0f-c62906c12605" configVersion="8c803bff2054144d9d4c69f6b733f19d00000000">
 			<Metadata name="Document.ИпотечнаяЗаявка.Attribute.НомерТелефонаКлиента" id="05268fcb-023c-4c78-9217-cc18023394c4"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.Attribute.Комментарий" id="0c097305-6342-4d0b-84ca-563969fa42cd"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.TabularSection.КомментарииЗаявки.Attribute.Комментарий" id="10337f80-123c-4146-891e-87de35fead5e"/>
@@ -6822,6 +6822,7 @@
 			<Metadata name="Document.ИпотечнаяЗаявка.Attribute.Проект" id="46543ee6-c3bf-477f-a091-571e753622ff"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.Attribute.transactID" id="46d46c33-be79-41c6-ba97-190dd95bd795"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.Attribute.ЗамещающийАгент" id="48034da1-a011-4620-ad8c-1394c5f0fbc6"/>
+			<Metadata name="Document.ИпотечнаяЗаявка.TabularSection.ПрикрепленныеФайлы.Attribute.ApplicationID" id="4d4b2874-e245-4e24-9e77-98f64d3e8566"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.TabularSection.ПрикрепленныеФайлы.Attribute.id" id="5022868e-4bdb-474c-958b-7958808df6d5"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.Attribute.Черновик" id="505366ba-b244-45cf-9290-478b53c2e4e6"/>
 			<Metadata name="Document.ИпотечнаяЗаявка.TabularSection.ПрикрепленныеФайлы.Attribute.create_date" id="51f51ef3-3d6e-45a4-87f1-f430b640e16b"/>
@@ -6875,8 +6876,10 @@
 			<Metadata name="Document.ИпотечнаяЗаявка.TabularSection.ПрикрепленныеФайлы.Attribute.path" id="feff217b-0553-4933-a123-2d4729bbd6f1"/>
 		</Metadata>
 		<Metadata name="Document.ИпотечнаяЗаявка.Command.НастройкиРаботыСФайлами.CommandModule" id="fc915d15-4f8d-4add-a621-92bd1d09f207.2" configVersion="9f9c719254d9d947b22f0233fda9865300000000"/>
-		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаДокумента" id="d0d369f4-da96-4c2d-a462-a50109f0cf4a" configVersion="e56679c9bd363b4bb25b9a6ff8a73ac600000000"/>
-		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаДокумента.Form" id="d0d369f4-da96-4c2d-a462-a50109f0cf4a.0" configVersion="25414883b1dd094ab2cdf2943048e83f00000000"/>
+		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаДокумента" id="d0d369f4-da96-4c2d-a462-a50109f0cf4a" configVersion="8267a9e01c9ec046bad7357313c84ca000000000"/>
+		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаДокумента.Form" id="d0d369f4-da96-4c2d-a462-a50109f0cf4a.0" configVersion="b9a5adb515d2f143abb62e372c30b48800000000"/>
+		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаОтображенияРезультатаЗапроса" id="18394248-89c0-4c09-ac8f-b3c3b75f55a0" configVersion="bbe800e189df5b47a10ab1921169adf800000000"/>
+		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаОтображенияРезультатаЗапроса.Form" id="18394248-89c0-4c09-ac8f-b3c3b75f55a0.0" configVersion="a7dce23223b0e0498c1130e47a7ebbba00000000"/>
 		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаСписка" id="be7784b6-72c7-44d3-b345-bd992696aa52" configVersion="cd93a25a8d40b049bf79a6bc490f708d00000000"/>
 		<Metadata name="Document.ИпотечнаяЗаявка.Form.ФормаСписка.Form" id="be7784b6-72c7-44d3-b345-bd992696aa52.0" configVersion="2b84d75eb01b6146898e7b24ddb4d58b00000000"/>
 		<Metadata name="Document.ИпотечнаяЗаявка.ManagerModule" id="cc8a9536-4b81-4c1b-be0f-c62906c12605.2" configVersion="0eee148d2a6c8c4eb7480144d484b0c200000000"/>
@@ -8752,7 +8755,7 @@
 		</Metadata>
 		<Metadata name="InformationRegister.ДанныеCallTracking.Form.ФормаСписка" id="c9a61fd4-0405-48bb-bb99-2f6fd8ee5ff3" configVersion="01da7c690f26ad41856292e99aa8276100000000"/>
 		<Metadata name="InformationRegister.ДанныеCallTracking.Form.ФормаСписка.Form" id="c9a61fd4-0405-48bb-bb99-2f6fd8ee5ff3.0" configVersion="f6270c0159499a4fa68899d0d2b947a000000000"/>
-		<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик" id="cb2067af-455d-4735-a317-87477541e2ad" configVersion="c1d63da01e39d34db49ea8d06090361c00000000">
+		<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик" id="cb2067af-455d-4735-a317-87477541e2ad" configVersion="5d0ed9e4c61b0945a3aa508d9f00d01300000000">
 			<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Dimension.client_secret" id="0cac5268-cc6e-4ad5-9c91-b6ca671cf36d"/>
 			<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Resource.refresh_token" id="2ef94933-fa12-4ab0-b2d6-fe58b7d9a9e6"/>
 			<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Resource.expires_in" id="39a0ce7f-9adb-41dc-a1cd-7ea5de576c54"/>
@@ -8762,6 +8765,8 @@
 			<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Resource.access_token" id="f4df1d38-05ee-4fee-9bd0-d2bcc280859f"/>
 			<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Resource.token_type" id="fa154b6a-3779-49e7-a28f-96d43927fa2f"/>
 		</Metadata>
+		<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Form.ФормаЗаписи" id="4d00f911-0b00-4e60-a5b0-04f8f998daed" configVersion="553bcf0188978f49b9e397fe6b2efee200000000"/>
+		<Metadata name="InformationRegister.ДанныеАвторизацииДомКлик.Form.ФормаЗаписи.Form" id="4d00f911-0b00-4e60-a5b0-04f8f998daed.0" configVersion="fd7f6d46ba85eb4e8bf456e7694254df00000000"/>
 		<Metadata name="InformationRegister.ДанныеБизнесПроцессов" id="8f17ec3f-6d62-46b8-baef-b20430e948ce" configVersion="47431f3ffdf16848a09dae1e2d93c17200000000">
 			<Metadata name="InformationRegister.ДанныеБизнесПроцессов.Resource.Дата" id="038dbb00-e4c6-4e64-b861-3a0764f54ab3"/>
 			<Metadata name="InformationRegister.ДанныеБизнесПроцессов.Resource.Автор" id="12146ed3-c159-4d6b-ae1a-1ecd30e5a87e"/>
