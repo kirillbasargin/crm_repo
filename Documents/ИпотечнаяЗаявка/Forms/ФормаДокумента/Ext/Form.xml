@@ -156,6 +156,16 @@
 						<CommandName>Form.Command.ПолуитьДанныеСделки</CommandName>
 						<ExtendedTooltip name="ФормаПолуитьДанныеСделкиРасширеннаяПодсказка" id="426"/>
 					</Button>
+					<Button name="ФормаОтправитьСделку" id="438">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтправитьСделку</CommandName>
+						<ExtendedTooltip name="ФормаОтправитьСделкуРасширеннаяПодсказка" id="439"/>
+					</Button>
+					<Button name="ФормаИзменитьСтатусСделки" id="436">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьСтатусСделки</CommandName>
+						<ExtendedTooltip name="ФормаИзменитьСтатусСделкиРасширеннаяПодсказка" id="437"/>
+					</Button>
 				</ChildItems>
 			</Popup>
 		</ChildItems>
@@ -965,10 +975,10 @@
 																				<CommandName>Form.Command.УдалениеАнкетыСозаемщика</CommandName>
 																				<ExtendedTooltip name="АнкетыУдалениеАнкетыСозаемщикаРасширеннаяПодсказка" id="411"/>
 																			</Button>
-																			<Button name="АнкетыОтправитьСМСКлиенту" id="412">
+																			<Button name="АнкетыОтправитьПереотправитьСМСКлиенту" id="434">
 																				<Type>CommandBarButton</Type>
-																				<CommandName>Form.Command.ОтправитьСМСКлиенту</CommandName>
-																				<ExtendedTooltip name="АнкетыОтправитьСМСКлиентуРасширеннаяПодсказка" id="413"/>
+																				<CommandName>Form.Command.ОтправитьПереотправитьСМСКлиенту</CommandName>
+																				<ExtendedTooltip name="АнкетыОтправитьПереотправитьСМСКлиентуРасширеннаяПодсказка" id="435"/>
 																			</Button>
 																			<Button name="АнкетыПодписатьСогласиеКодомИзСМС" id="414">
 																				<Type>CommandBarButton</Type>
@@ -1210,11 +1220,6 @@
 																		<CommandName>Form.Command.ОбновитьФайлы</CommandName>
 																		<ExtendedTooltip name="ПрикрепленныеФайлыОбновитьФайлыРасширеннаяПодсказка" id="206"/>
 																	</Button>
-																	<Button name="ПрикрепленныеФайлыСозданиеДокументов" id="416">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.СозданиеДокументов</CommandName>
-																		<ExtendedTooltip name="ПрикрепленныеФайлыСозданиеДокументовРасширеннаяПодсказка" id="417"/>
-																	</Button>
 																	<Button name="ПрикрепленныеФайлыУдалениеДокументов" id="418">
 																		<Type>CommandBarButton</Type>
 																		<CommandName>Form.Command.УдалениеДокументов</CommandName>
@@ -1418,6 +1423,14 @@
 																	<EditMode>EnterOnInput</EditMode>
 																	<ContextMenu name="ПрикрепленныеФайлыПодТипДокументаКонтекстноеМеню" id="389"/>
 																	<ExtendedTooltip name="ПрикрепленныеФайлыПодТипДокументаРасширеннаяПодсказка" id="390"/>
+																</InputField>
+																<InputField name="ПрикрепленныеФайлыСтатусДокумента" id="440">
+																	<DataPath>Объект.ПрикрепленныеФайлы.СтатусДокумента</DataPath>
+																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<TitleBackColor>style:CRM_ЦветГруппыФормы</TitleBackColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПрикрепленныеФайлыСтатусДокументаКонтекстноеМеню" id="441"/>
+																	<ExtendedTooltip name="ПрикрепленныеФайлыСтатусДокументаРасширеннаяПодсказка" id="442"/>
 																</InputField>
 															</ChildItems>
 														</Table>
@@ -2233,21 +2246,6 @@
 			</ToolTip>
 			<Action>УдалениеАнкетыСозаемщика</Action>
 		</Command>
-		<Command name="СозданиеДокументов" id="26">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Создание документов</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Создание документов</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>СозданиеДокументов</Action>
-		</Command>
 		<Command name="УдалениеДокументов" id="27">
 			<Title>
 				<v8:item>
@@ -2262,21 +2260,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УдалениеДокументов</Action>
-		</Command>
-		<Command name="ОтправитьСМСКлиенту" id="28">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить СМС клиенту</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить СМСКлиенту</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОтправитьСМСКлиенту</Action>
 		</Command>
 		<Command name="ПодписатьСогласиеКодомИзСМС" id="29">
 			<Title>
@@ -2337,6 +2320,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтправитьДокументы</Action>
+		</Command>
+		<Command name="ОтправитьПереотправитьСМСКлиенту" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить/переотправить СМС клиенту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить переотправить СМСКлиенту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПереотправитьСМСКлиенту</Action>
+		</Command>
+		<Command name="ИзменитьСтатусСделки" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить статус сделки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить статус сделки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьСтатусСделки</Action>
+		</Command>
+		<Command name="ОтправитьСделку" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сделку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сделку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСделку</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

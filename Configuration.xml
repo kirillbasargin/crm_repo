@@ -1766,6 +1766,7 @@
 			<Catalog>СтатусыИпотечныхАнкетДомКлик</Catalog>
 			<Catalog>ТипыАнкетДомКлик</Catalog>
 			<Catalog>ИпотечныеАгенты</Catalog>
+			<Catalog>СтатусыИпотечныхДокументов</Catalog>
 			<Document>Анкета</Document>
 			<Document>Бронирование</Document>
 			<Document>ВводКоэффициентаПлатежДоход</Document>

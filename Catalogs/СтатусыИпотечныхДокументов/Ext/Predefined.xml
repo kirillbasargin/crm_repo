@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="f865f5a0-5b48-4053-89a8-b916219bde68">
+		<Name>Обработан</Name>
+		<Code>000000003</Code>
+		<Description>DONE</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fe45c068-2b02-4f5e-9a7d-035cfcc81800">
+		<Name>Ошибка</Name>
+		<Code>000000004</Code>
+		<Description>ERROR</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eab0507a-fcc8-4b48-9fdc-17f8f1ec2953">
+		<Name>ВПроцессе</Name>
+		<Code>000000002</Code>
+		<Description>IN_PROGRESS</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b6c7ae57-a6b5-4d15-a065-a225d035c0c2">
+		<Name>НеКлассифицирован</Name>
+		<Code>000000001</Code>
+		<Description>WONT_CLASSIFIED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
