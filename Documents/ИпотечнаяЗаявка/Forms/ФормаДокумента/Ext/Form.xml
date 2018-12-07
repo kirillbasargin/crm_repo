@@ -130,7 +130,7 @@
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Сделка ДомКлик</v8:content>
+						<v8:content>ДомКлик</v8:content>
 					</v8:item>
 				</Title>
 				<ToolTip>
@@ -151,11 +151,6 @@
 						<CommandName>Form.Command.ОбновлениеСделки</CommandName>
 						<ExtendedTooltip name="ФормаОбновлениеСделкиРасширеннаяПодсказка" id="407"/>
 					</Button>
-					<Button name="ФормаПолуитьДанныеСделки" id="425">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ПолуитьДанныеСделки</CommandName>
-						<ExtendedTooltip name="ФормаПолуитьДанныеСделкиРасширеннаяПодсказка" id="426"/>
-					</Button>
 					<Button name="ФормаОтправитьСделку" id="438">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ОтправитьСделку</CommandName>
@@ -165,6 +160,11 @@
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ИзменитьСтатусСделки</CommandName>
 						<ExtendedTooltip name="ФормаИзменитьСтатусСделкиРасширеннаяПодсказка" id="437"/>
+					</Button>
+					<Button name="ФормаПолучитьДанныеСделки" id="425">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПолучитьДанныеСделки</CommandName>
+						<ExtendedTooltip name="ФормаПолучитьДанныеСделкиРасширеннаяПодсказка" id="426"/>
 					</Button>
 				</ChildItems>
 			</Popup>
@@ -588,12 +588,6 @@
 																	<ContextMenu name="ЗамещающийАгентКонтекстноеМеню" id="280"/>
 																	<ExtendedTooltip name="ЗамещающийАгентРасширеннаяПодсказка" id="281"/>
 																</InputField>
-																<InputField name="ИпотечныйАгент" id="420">
-																	<DataPath>Объект.ИпотечныйАгент</DataPath>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<ContextMenu name="ИпотечныйАгентКонтекстноеМеню" id="421"/>
-																	<ExtendedTooltip name="ИпотечныйАгентРасширеннаяПодсказка" id="422"/>
-																</InputField>
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="Группа3" id="228">
@@ -740,43 +734,66 @@
 																	<v8:content>Группа реквизиты дом клик</v8:content>
 																</v8:item>
 															</ToolTip>
+															<HorizontalAlign>Left</HorizontalAlign>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаРеквизитыДомКликРасширеннаяПодсказка" id="249"/>
 															<ChildItems>
-																<InputField name="ПредполагаемаяСтоимостьОН" id="61">
-																	<DataPath>Объект.ПредполагаемаяСтоимостьОН</DataPath>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<EditMode>EnterOnInput</EditMode>
-																	<Width>17</Width>
-																	<ContextMenu name="ПредполагаемаяСтоимостьОНКонтекстноеМеню" id="62"/>
-																	<ExtendedTooltip name="ПредполагаемаяСтоимостьОНРасширеннаяПодсказка" id="63"/>
-																</InputField>
-																<InputField name="СуммаКредитаВРублях" id="58">
-																	<DataPath>Объект.СуммаКредитаВРублях</DataPath>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<EditMode>EnterOnInput</EditMode>
-																	<Width>17</Width>
-																	<ContextMenu name="СуммаКредитаВРубляхКонтекстноеМеню" id="59"/>
-																	<ExtendedTooltip name="СуммаКредитаВРубляхРасширеннаяПодсказка" id="60"/>
-																</InputField>
-																<InputField name="ПервоначальныйВзнос" id="349">
-																	<DataPath>Объект.ПервоначальныйВзнос</DataPath>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<ContextMenu name="ПервоначальныйВзносКонтекстноеМеню" id="350"/>
-																	<ExtendedTooltip name="ПервоначальныйВзносРасширеннаяПодсказка" id="351"/>
-																</InputField>
-																<InputField name="СрокКредита" id="346">
-																	<DataPath>Объект.СрокКредита</DataPath>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<ContextMenu name="СрокКредитаКонтекстноеМеню" id="347"/>
-																	<ExtendedTooltip name="СрокКредитаРасширеннаяПодсказка" id="348"/>
-																</InputField>
+																<UsualGroup name="Группа1" id="445">
+																	<Representation>StrongSeparation</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="446"/>
+																	<ChildItems>
+																		<InputField name="ИпотечныйАгент" id="420">
+																			<DataPath>Объект.ИпотечныйАгент</DataPath>
+																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																			<Width>30</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="ИпотечныйАгентКонтекстноеМеню" id="421"/>
+																			<ExtendedTooltip name="ИпотечныйАгентРасширеннаяПодсказка" id="422"/>
+																		</InputField>
+																		<InputField name="ПредполагаемаяСтоимостьОН" id="61">
+																			<DataPath>Объект.ПредполагаемаяСтоимостьОН</DataPath>
+																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																			<EditMode>EnterOnInput</EditMode>
+																			<Width>18</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="ПредполагаемаяСтоимостьОНКонтекстноеМеню" id="62"/>
+																			<ExtendedTooltip name="ПредполагаемаяСтоимостьОНРасширеннаяПодсказка" id="63"/>
+																		</InputField>
+																		<InputField name="СуммаКредитаВРублях" id="58">
+																			<DataPath>Объект.СуммаКредитаВРублях</DataPath>
+																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																			<EditMode>EnterOnInput</EditMode>
+																			<Width>18</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="СуммаКредитаВРубляхКонтекстноеМеню" id="59"/>
+																			<ExtendedTooltip name="СуммаКредитаВРубляхРасширеннаяПодсказка" id="60"/>
+																		</InputField>
+																		<InputField name="ПервоначальныйВзнос" id="349">
+																			<DataPath>Объект.ПервоначальныйВзнос</DataPath>
+																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																			<Width>18</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="ПервоначальныйВзносКонтекстноеМеню" id="350"/>
+																			<ExtendedTooltip name="ПервоначальныйВзносРасширеннаяПодсказка" id="351"/>
+																		</InputField>
+																		<InputField name="СрокКредита" id="346">
+																			<DataPath>Объект.СрокКредита</DataPath>
+																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																			<Width>18</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="СрокКредитаКонтекстноеМеню" id="347"/>
+																			<ExtendedTooltip name="СрокКредитаРасширеннаяПодсказка" id="348"/>
+																		</InputField>
+																	</ChildItems>
+																</UsualGroup>
 																<InputField name="ОбодреннаяСуммаКредитаВРублях" id="210">
 																	<DataPath>Объект.sum_approved</DataPath>
 																	<ReadOnly>true</ReadOnly>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<Width>17</Width>
+																	<Width>18</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="ОбодреннаяСуммаКредитаВРубляхКонтекстноеМеню" id="211"/>
 																	<ExtendedTooltip name="ОбодреннаяСуммаКредитаВРубляхРасширеннаяПодсказка" id="212"/>
 																</InputField>
@@ -784,20 +801,17 @@
 																	<DataPath>Объект.ЕжемесячныйПлатеж</DataPath>
 																	<ReadOnly>true</ReadOnly>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<Width>18</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="ЕжемесячныйПлатежКонтекстноеМеню" id="392"/>
 																	<ExtendedTooltip name="ЕжемесячныйПлатежРасширеннаяПодсказка" id="393"/>
-																</InputField>
-																<InputField name="ПроцентнаяСтавка" id="352">
-																	<DataPath>Объект.ПроцентнаяСтавка</DataPath>
-																	<ReadOnly>true</ReadOnly>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<ContextMenu name="ПроцентнаяСтавкаКонтекстноеМеню" id="353"/>
-																	<ExtendedTooltip name="ПроцентнаяСтавкаРасширеннаяПодсказка" id="354"/>
 																</InputField>
 																<InputField name="Переплата" id="355">
 																	<DataPath>Объект.Переплата</DataPath>
 																	<ReadOnly>true</ReadOnly>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<Width>18</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="ПереплатаКонтекстноеМеню" id="356"/>
 																	<ExtendedTooltip name="ПереплатаРасширеннаяПодсказка" id="357"/>
 																</InputField>
@@ -805,8 +819,17 @@
 																	<DataPath>Объект.НеобходимыйДоход</DataPath>
 																	<ReadOnly>true</ReadOnly>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<Width>18</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="НеобходимыйДоходКонтекстноеМеню" id="359"/>
 																	<ExtendedTooltip name="НеобходимыйДоходРасширеннаяПодсказка" id="360"/>
+																</InputField>
+																<InputField name="ПроцентнаяСтавка" id="352">
+																	<DataPath>Объект.ПроцентнаяСтавка</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<ContextMenu name="ПроцентнаяСтавкаКонтекстноеМеню" id="353"/>
+																	<ExtendedTooltip name="ПроцентнаяСтавкаРасширеннаяПодсказка" id="354"/>
 																</InputField>
 																<InputField name="AuthorID" id="361">
 																	<DataPath>Объект.AuthorID</DataPath>
@@ -884,7 +907,7 @@
 														<InputField name="КомментарийКЗаявке" id="397">
 															<DataPath>Объект.КомментарийКЗаявке</DataPath>
 															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-															<Width>80</Width>
+															<Width>60</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>2</Height>
 															<AutoMaxHeight>false</AutoMaxHeight>
@@ -950,7 +973,7 @@
 																		<Title>
 																			<v8:item>
 																				<v8:lang>ru</v8:lang>
-																				<v8:content>Анкета ДомКлик</v8:content>
+																				<v8:content>ДомКлик</v8:content>
 																			</v8:item>
 																		</Title>
 																		<ExtendedTooltip name="АнкетыПодменюАнкетДомКликРасширеннаяПодсказка" id="424"/>
@@ -964,11 +987,6 @@
 																				<Type>CommandBarButton</Type>
 																				<CommandName>Form.Command.ОбновлениеАнкеты</CommandName>
 																				<ExtendedTooltip name="ФормаОбновлениеАнкетыРасширеннаяПодсказка" id="405"/>
-																			</Button>
-																			<Button name="АнкетыПолучитьДанныеАнкеты" id="427">
-																				<Type>CommandBarButton</Type>
-																				<CommandName>Form.Command.ПолучитьДанныеАнкеты</CommandName>
-																				<ExtendedTooltip name="АнкетыПолучитьДанныеАнкетыРасширеннаяПодсказка" id="428"/>
 																			</Button>
 																			<Button name="АнкетыУдалениеАнкетыСозаемщика" id="410">
 																				<Type>CommandBarButton</Type>
@@ -984,6 +1002,16 @@
 																				<Type>CommandBarButton</Type>
 																				<CommandName>Form.Command.ПодписатьСогласиеКодомИзСМС</CommandName>
 																				<ExtendedTooltip name="АнкетыПодписатьСогласиеКодомИзСМСРасширеннаяПодсказка" id="415"/>
+																			</Button>
+																			<Button name="АнкетыПолучитьДанныеАнкеты" id="427">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ПолучитьДанныеАнкеты</CommandName>
+																				<ExtendedTooltip name="АнкетыПолучитьДанныеАнкетыРасширеннаяПодсказка" id="428"/>
+																			</Button>
+																			<Button name="АнкетыПолучитьСтруктуруАнкеты" id="447">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ПолучитьСтруктуруАнкеты</CommandName>
+																				<ExtendedTooltip name="АнкетыПолучитьСтруктуруАнкетыРасширеннаяПодсказка" id="448"/>
 																			</Button>
 																		</ChildItems>
 																	</Popup>
@@ -1151,6 +1179,7 @@
 																	</Button>
 																	<Button name="ПрикрепленныеФайлыкнОткрытьКарточкуФайла" id="169">
 																		<Type>CommandBarButton</Type>
+																		<Visible>false</Visible>
 																		<UserVisible>
 																			<xr:Common>false</xr:Common>
 																			<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
@@ -1220,16 +1249,35 @@
 																		<CommandName>Form.Command.ОбновитьФайлы</CommandName>
 																		<ExtendedTooltip name="ПрикрепленныеФайлыОбновитьФайлыРасширеннаяПодсказка" id="206"/>
 																	</Button>
-																	<Button name="ПрикрепленныеФайлыУдалениеДокументов" id="418">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.УдалениеДокументов</CommandName>
-																		<ExtendedTooltip name="ПрикрепленныеФайлыУдалениеДокументовРасширеннаяПодсказка" id="419"/>
-																	</Button>
-																	<Button name="ПрикрепленныеФайлыОтправитьДокументы" id="432">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.ОтправитьДокументы</CommandName>
-																		<ExtendedTooltip name="ПрикрепленныеФайлыОтправитьДокументыРасширеннаяПодсказка" id="433"/>
-																	</Button>
+																	<Popup name="ПрикрепленныеФайлыГруппаДомКлик" id="443">
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>ДомКлик</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ToolTip>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Прикрепленные файлы группа дом клик</v8:content>
+																			</v8:item>
+																		</ToolTip>
+																		<ExtendedTooltip name="ПрикрепленныеФайлыГруппаДомКликРасширеннаяПодсказка" id="444"/>
+																		<ChildItems>
+																			<Button name="ПрикрепленныеФайлыОтправитьДокументы" id="432">
+																				<Type>CommandBarButton</Type>
+																				<OnlyInAllActions>true</OnlyInAllActions>
+																				<CommandName>Form.Command.ОтправитьДокументы</CommandName>
+																				<ExtendedTooltip name="ПрикрепленныеФайлыОтправитьДокументыРасширеннаяПодсказка" id="433"/>
+																			</Button>
+																			<Button name="ПрикрепленныеФайлыУдалениеДокументов" id="418">
+																				<Type>CommandBarButton</Type>
+																				<OnlyInAllActions>true</OnlyInAllActions>
+																				<CommandName>Form.Command.УдалениеДокументов</CommandName>
+																				<ExtendedTooltip name="ПрикрепленныеФайлыУдалениеДокументовРасширеннаяПодсказка" id="419"/>
+																			</Button>
+																		</ChildItems>
+																	</Popup>
 																</ChildItems>
 															</AutoCommandBar>
 															<ExtendedTooltip name="ПрикрепленныеФайлыРасширеннаяПодсказка" id="105"/>
@@ -2005,7 +2053,6 @@
 					<v8:content>Получить данные о заявке</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>F5</Shortcut>
 			<Picture>
 				<xr:Ref>StdPicture.Refresh</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -2276,20 +2323,20 @@
 			</ToolTip>
 			<Action>ПодписатьСогласиеКодомИзСМС</Action>
 		</Command>
-		<Command name="ПолуитьДанныеСделки" id="30">
+		<Command name="ПолучитьДанныеСделки" id="30">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Полуить данные сделки</v8:content>
+					<v8:content>Получить данные сделки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Полуить данные сделки</v8:content>
+					<v8:content>Получить данные сделки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПолуитьДанныеСделки</Action>
+			<Action>ПолучитьДанныеСделки</Action>
 		</Command>
 		<Command name="ПолучитьДанныеАнкеты" id="31">
 			<Title>
@@ -2365,6 +2412,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтправитьСделку</Action>
+		</Command>
+		<Command name="Команда1" id="26"/>
+		<Command name="ПолучитьСтруктуруАнкеты" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить структуру анкеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить структуру анкеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСтруктуруАнкеты</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
