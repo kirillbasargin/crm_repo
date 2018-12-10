@@ -155,6 +155,12 @@
 									<ContextMenu name="DaData_СекретныйКлючКонтекстноеМеню" id="163"/>
 									<ExtendedTooltip name="DaData_СекретныйКлючРасширеннаяПодсказка" id="164"/>
 								</InputField>
+								<CheckBoxField name="ИспользоватьAPIПодсказок" id="167">
+									<DataPath>Объект.ИспользоватьAPIСтандартизации</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьAPIПодсказокКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="ИспользоватьAPIПодсказокРасширеннаяПодсказка" id="169"/>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
