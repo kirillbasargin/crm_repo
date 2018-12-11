@@ -108,16 +108,16 @@
 						<CommandName>Form.Command.ИзменитьСтатус</CommandName>
 						<ExtendedTooltip name="ФормаИзменитьСтатусРасширеннаяПодсказка" id="214"/>
 					</Button>
-					<Button name="ФормаДоступныеАгенты" id="224">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ДоступныеАгенты</CommandName>
-						<ExtendedTooltip name="ФормаДоступныеАгентыРасширеннаяПодсказка" id="225"/>
-					</Button>
 					<Button name="ФормаПолучитьОтделенияБанков" id="234">
 						<Type>CommandBarButton</Type>
 						<Visible>false</Visible>
 						<CommandName>Form.Command.ПолучитьОтделенияБанков</CommandName>
 						<ExtendedTooltip name="ФормаПолучитьОтделенияБанковРасширеннаяПодсказка" id="235"/>
+					</Button>
+					<Button name="ФормаДоступныеАгенты" id="224">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДоступныеАгенты</CommandName>
+						<ExtendedTooltip name="ФормаДоступныеАгентыРасширеннаяПодсказка" id="225"/>
 					</Button>
 					<Button name="ФормаПроверитьНастройкуПользователя" id="263">
 						<Type>CommandBarButton</Type>
@@ -1485,7 +1485,6 @@
 													</ChildItems>
 												</UsualGroup>
 												<UsualGroup name="ГруппаКомментарии" id="171">
-													<Visible>false</Visible>
 													<UserVisible>
 														<xr:Common>true</xr:Common>
 														<xr:Value name="Role.Администрирование">true</xr:Value>
