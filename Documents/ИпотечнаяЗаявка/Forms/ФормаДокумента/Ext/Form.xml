@@ -144,6 +144,12 @@
 					<Button name="ФормаСозданиеСделки" id="402">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.СозданиеСделки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать черновик</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ФормаСозданиеСделкиРасширеннаяПодсказка" id="403"/>
 					</Button>
 					<Button name="ФормаОбновлениеСделки" id="406">
@@ -158,6 +164,7 @@
 					</Button>
 					<Button name="ФормаИзменитьСтатусСделки" id="436">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ИзменитьСтатусСделки</CommandName>
 						<ExtendedTooltip name="ФормаИзменитьСтатусСделкиРасширеннаяПодсказка" id="437"/>
 					</Button>
@@ -553,6 +560,104 @@
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДанныеПоКлиентуДляОтправкиРасширеннаяПодсказка" id="239"/>
 											<ChildItems>
+												<UsualGroup name="ГруппаДанныеКлиента" id="313">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Данные клиента</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="ГруппаДанныеКлиентаРасширеннаяПодсказка" id="314"/>
+													<ChildItems>
+														<InputField name="ФИОКлиента" id="181">
+															<DataPath>Объект.ФИОКлиента</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+															<Width>60</Width>
+															<ContextMenu name="ФИОКлиентаКонтекстноеМеню" id="182"/>
+															<ExtendedTooltip name="ФИОКлиентаРасширеннаяПодсказка" id="183"/>
+														</InputField>
+														<InputField name="ДатаРожденияКлиента" id="64">
+															<DataPath>Объект.ДатаРожденияКлиента</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ДатаРожденияКлиентаКонтекстноеМеню" id="65"/>
+															<ExtendedTooltip name="ДатаРожденияКлиентаРасширеннаяПодсказка" id="66"/>
+														</InputField>
+														<InputField name="СерияНомерПаспорта" id="52">
+															<DataPath>Объект.СерияНомерПаспорта</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>60</Width>
+															<ContextMenu name="СерияНомерПаспортаКонтекстноеМеню" id="53"/>
+															<ExtendedTooltip name="СерияНомерПаспортаРасширеннаяПодсказка" id="54"/>
+														</InputField>
+														<InputField name="НомерТелефонаКлиента" id="178">
+															<DataPath>Объект.НомерТелефонаКлиента</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+															<Width>60</Width>
+															<ContextMenu name="НомерТелефонаКлиентаКонтекстноеМеню" id="179"/>
+															<ExtendedTooltip name="НомерТелефонаКлиентаРасширеннаяПодсказка" id="180"/>
+														</InputField>
+														<InputField name="EmailКлиента" id="175">
+															<DataPath>Объект.EmailКлиента</DataPath>
+															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+															<Width>60</Width>
+															<ContextMenu name="EmailКлиентаКонтекстноеМеню" id="176"/>
+															<ExtendedTooltip name="EmailКлиентаРасширеннаяПодсказка" id="177"/>
+														</InputField>
+														<UsualGroup name="Группа2" id="315">
+															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Адреса</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>None</ToolTipRepresentation>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="316"/>
+															<ChildItems>
+																<InputField name="АдресФактическогоПроживания" id="67">
+																	<DataPath>Объект.АдресФактическогоПроживания</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Фактического проживания</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>60</Width>
+																	<ContextMenu name="АдресФактическогоПроживанияКонтекстноеМеню" id="68"/>
+																	<ExtendedTooltip name="АдресФактическогоПроживанияРасширеннаяПодсказка" id="69"/>
+																</InputField>
+																<InputField name="АдресМестаРаботы" id="70">
+																	<DataPath>Объект.АдресМестаРаботы</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Места работы</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>60</Width>
+																	<ContextMenu name="АдресМестаРаботыКонтекстноеМеню" id="71"/>
+																	<ExtendedTooltip name="АдресМестаРаботыРасширеннаяПодсказка" id="72"/>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
 												<UsualGroup name="Группа11" id="246">
 													<Title>
 														<v8:item>
@@ -620,104 +725,6 @@
 																	<ContextMenu name="partner_office_idКонтекстноеМеню" id="216"/>
 																	<ExtendedTooltip name="partner_office_idРасширеннаяПодсказка" id="217"/>
 																</InputField>
-															</ChildItems>
-														</UsualGroup>
-														<UsualGroup name="ГруппаДанныеКлиента" id="313">
-															<Visible>false</Visible>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Данные клиента</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTipRepresentation>None</ToolTipRepresentation>
-															<Group>Vertical</Group>
-															<ExtendedTooltip name="ГруппаДанныеКлиентаРасширеннаяПодсказка" id="314"/>
-															<ChildItems>
-																<InputField name="ФИОКлиента" id="181">
-																	<DataPath>Объект.ФИОКлиента</DataPath>
-																	<ReadOnly>true</ReadOnly>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<Width>60</Width>
-																	<ContextMenu name="ФИОКлиентаКонтекстноеМеню" id="182"/>
-																	<ExtendedTooltip name="ФИОКлиентаРасширеннаяПодсказка" id="183"/>
-																</InputField>
-																<InputField name="ДатаРожденияКлиента" id="64">
-																	<DataPath>Объект.ДатаРожденияКлиента</DataPath>
-																	<ReadOnly>true</ReadOnly>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<EditMode>EnterOnInput</EditMode>
-																	<ContextMenu name="ДатаРожденияКлиентаКонтекстноеМеню" id="65"/>
-																	<ExtendedTooltip name="ДатаРожденияКлиентаРасширеннаяПодсказка" id="66"/>
-																</InputField>
-																<InputField name="СерияНомерПаспорта" id="52">
-																	<DataPath>Объект.СерияНомерПаспорта</DataPath>
-																	<ReadOnly>true</ReadOnly>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<EditMode>EnterOnInput</EditMode>
-																	<Width>60</Width>
-																	<ContextMenu name="СерияНомерПаспортаКонтекстноеМеню" id="53"/>
-																	<ExtendedTooltip name="СерияНомерПаспортаРасширеннаяПодсказка" id="54"/>
-																</InputField>
-																<InputField name="НомерТелефонаКлиента" id="178">
-																	<DataPath>Объект.НомерТелефонаКлиента</DataPath>
-																	<ReadOnly>true</ReadOnly>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<Width>60</Width>
-																	<ContextMenu name="НомерТелефонаКлиентаКонтекстноеМеню" id="179"/>
-																	<ExtendedTooltip name="НомерТелефонаКлиентаРасширеннаяПодсказка" id="180"/>
-																</InputField>
-																<InputField name="EmailКлиента" id="175">
-																	<DataPath>Объект.EmailКлиента</DataPath>
-																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																	<Width>60</Width>
-																	<ContextMenu name="EmailКлиентаКонтекстноеМеню" id="176"/>
-																	<ExtendedTooltip name="EmailКлиентаРасширеннаяПодсказка" id="177"/>
-																</InputField>
-																<UsualGroup name="Группа2" id="315">
-																	<Visible>false</Visible>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Адреса</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ToolTipRepresentation>None</ToolTipRepresentation>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="316"/>
-																	<ChildItems>
-																		<InputField name="АдресФактическогоПроживания" id="67">
-																			<DataPath>Объект.АдресФактическогоПроживания</DataPath>
-																			<ReadOnly>true</ReadOnly>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Фактического проживания</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																			<EditMode>EnterOnInput</EditMode>
-																			<Width>60</Width>
-																			<ContextMenu name="АдресФактическогоПроживанияКонтекстноеМеню" id="68"/>
-																			<ExtendedTooltip name="АдресФактическогоПроживанияРасширеннаяПодсказка" id="69"/>
-																		</InputField>
-																		<InputField name="АдресМестаРаботы" id="70">
-																			<DataPath>Объект.АдресМестаРаботы</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Места работы</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-																			<EditMode>EnterOnInput</EditMode>
-																			<Width>60</Width>
-																			<ContextMenu name="АдресМестаРаботыКонтекстноеМеню" id="71"/>
-																			<ExtendedTooltip name="АдресМестаРаботыРасширеннаяПодсказка" id="72"/>
-																		</InputField>
-																	</ChildItems>
-																</UsualGroup>
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="ГруппаРеквизитыДомКлик" id="248">
@@ -833,6 +840,7 @@
 																</InputField>
 																<InputField name="AuthorID" id="361">
 																	<DataPath>Объект.AuthorID</DataPath>
+																	<Visible>false</Visible>
 																	<ReadOnly>true</ReadOnly>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<ContextMenu name="AuthorIDКонтекстноеМеню" id="362"/>
@@ -840,6 +848,7 @@
 																</InputField>
 																<InputField name="BorrowerCasID" id="364">
 																	<DataPath>Объект.BorrowerCasID</DataPath>
+																	<Visible>false</Visible>
 																	<ReadOnly>true</ReadOnly>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<ContextMenu name="BorrowerCasIDКонтекстноеМеню" id="365"/>
@@ -907,7 +916,7 @@
 														<InputField name="КомментарийКЗаявке" id="397">
 															<DataPath>Объект.КомментарийКЗаявке</DataPath>
 															<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
-															<Width>60</Width>
+															<Width>65</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>2</Height>
 															<AutoMaxHeight>false</AutoMaxHeight>
@@ -961,7 +970,13 @@
 													<ExtendedTooltip name="ГруппаАнкетыРасширеннаяПодсказка" id="345"/>
 													<ChildItems>
 														<Table name="Анкеты" id="322">
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>3</MaxHeight>
+															<HeightInTableRows>3</HeightInTableRows>
+															<AutoMaxRowsCount>false</AutoMaxRowsCount>
+															<MaxRowsCount>3</MaxRowsCount>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<VerticalStretch>false</VerticalStretch>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Объект.Анкеты</DataPath>
@@ -1154,6 +1169,10 @@
 													<ExtendedTooltip name="ГруппаПрикрепленныеФайлыРасширеннаяПодсказка" id="174"/>
 													<ChildItems>
 														<Table name="ПрикрепленныеФайлы" id="102">
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>4</MaxHeight>
+															<HeightInTableRows>4</HeightInTableRows>
+															<AutoMaxRowsCount>false</AutoMaxRowsCount>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
@@ -1474,6 +1493,7 @@
 																</InputField>
 																<InputField name="ПрикрепленныеФайлыСтатусДокумента" id="440">
 																	<DataPath>Объект.ПрикрепленныеФайлы.СтатусДокумента</DataPath>
+																	<Visible>false</Visible>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<TitleBackColor>style:CRM_ЦветГруппыФормы</TitleBackColor>
 																	<EditMode>EnterOnInput</EditMode>
@@ -1509,6 +1529,12 @@
 													<ExtendedTooltip name="ГруппаКомментарииРасширеннаяПодсказка" id="172"/>
 													<ChildItems>
 														<Table name="КомментарииЗаявки" id="134">
+															<Height>4</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>4</MaxHeight>
+															<HeightInTableRows>4</HeightInTableRows>
+															<AutoMaxRowsCount>false</AutoMaxRowsCount>
+															<MaxRowsCount>4</MaxRowsCount>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
@@ -1589,8 +1615,13 @@
 																	<TitleBackColor>style:FormBackColor</TitleBackColor>
 																	<TitleLocation>None</TitleLocation>
 																	<EditMode>EnterOnInput</EditMode>
+																	<AutoCellHeight>true</AutoCellHeight>
 																	<Width>2</Width>
+																	<Height>1</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>1</MaxHeight>
 																	<HorizontalStretch>false</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
 																	<ContextMenu name="КомментарииЗаявкиНомерСтрокиКонтекстноеМеню" id="148"/>
 																	<ExtendedTooltip name="КомментарииЗаявкиНомерСтрокиРасширеннаяПодсказка" id="149"/>
 																</LabelField>
@@ -1599,6 +1630,7 @@
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<TitleBackColor>style:FormBackColor</TitleBackColor>
 																	<EditMode>EnterOnInput</EditMode>
+																	<AutoCellHeight>true</AutoCellHeight>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="КомментарииЗаявкиОтправлятьКонтекстноеМеню" id="192"/>
 																	<ExtendedTooltip name="КомментарииЗаявкиОтправлятьРасширеннаяПодсказка" id="193"/>
@@ -1608,6 +1640,7 @@
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<TitleBackColor>style:FormBackColor</TitleBackColor>
 																	<EditMode>EnterOnInput</EditMode>
+																	<AutoCellHeight>true</AutoCellHeight>
 																	<OpenButton>true</OpenButton>
 																	<ContextMenu name="КомментарииЗаявкиКомментарийКонтекстноеМеню" id="151"/>
 																	<ExtendedTooltip name="КомментарииЗаявкиКомментарийРасширеннаяПодсказка" id="152"/>
@@ -1621,6 +1654,7 @@
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<TitleBackColor>style:FormBackColor</TitleBackColor>
 																	<EditMode>EnterOnInput</EditMode>
+																	<AutoCellHeight>true</AutoCellHeight>
 																	<ContextMenu name="КомментарииЗаявкиДатаДобавленияКонтекстноеМеню" id="164"/>
 																	<ExtendedTooltip name="КомментарииЗаявкиДатаДобавленияРасширеннаяПодсказка" id="165"/>
 																</InputField>
@@ -1629,6 +1663,7 @@
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<TitleBackColor>style:FormBackColor</TitleBackColor>
 																	<EditMode>EnterOnInput</EditMode>
+																	<AutoCellHeight>true</AutoCellHeight>
 																	<ContextMenu name="КомментарииЗаявкиДатаОтправкиКонтекстноеМеню" id="167"/>
 																	<ExtendedTooltip name="КомментарииЗаявкиДатаОтправкиРасширеннаяПодсказка" id="168"/>
 																</InputField>
@@ -1637,6 +1672,7 @@
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<TitleBackColor>style:FormBackColor</TitleBackColor>
 																	<EditMode>EnterOnInput</EditMode>
+																	<AutoCellHeight>true</AutoCellHeight>
 																	<ContextMenu name="КомментарииЗаявкиIDКонтекстноеМеню" id="185"/>
 																	<ExtendedTooltip name="КомментарииЗаявкиIDРасширеннаяПодсказка" id="186"/>
 																</InputField>
@@ -2412,12 +2448,11 @@
 			</ToolTip>
 			<Action>ОтправитьСделку</Action>
 		</Command>
-		<Command name="Команда1" id="26"/>
 		<Command name="ПолучитьСтруктуруАнкеты" id="35">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Получить структуру анкеты</v8:content>
+					<v8:content>Показать структуру анкеты</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -2427,6 +2462,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьСтруктуруАнкеты</Action>
+		</Command>
+		<Command name="ОбновитьДокумент" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДокумент</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
