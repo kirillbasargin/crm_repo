@@ -304,6 +304,9 @@
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="47"/>
 							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="48"/>
+							<Events>
+								<Event name="OnChange">ОтветственныйПриИзменении</Event>
+							</Events>
 						</InputField>
 						<InputField name="РасчетИпотеки" id="285">
 							<DataPath>Объект.РасчетИпотеки</DataPath>
@@ -725,7 +728,7 @@
 																	<DataPath>Объект.ID_Заявки</DataPath>
 																	<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																	<EditMode>EnterOnInput</EditMode>
-																	<Width>14</Width>
+																	<Width>18</Width>
 																	<ContextMenu name="ID_ЗаявкиКонтекстноеМеню" id="77"/>
 																	<ExtendedTooltip name="ID_ЗаявкиРасширеннаяПодсказка" id="78"/>
 																</InputField>
@@ -799,11 +802,21 @@
 																	<ChildItems>
 																		<InputField name="ИпотечныйАгент" id="420">
 																			<DataPath>Объект.ИпотечныйАгент</DataPath>
+																			<Visible>false</Visible>
 																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
 																			<Width>30</Width>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<ContextMenu name="ИпотечныйАгентКонтекстноеМеню" id="421"/>
 																			<ExtendedTooltip name="ИпотечныйАгентРасширеннаяПодсказка" id="422"/>
+																		</InputField>
+																		<InputField name="agentPhone" id="457">
+																			<DataPath>Объект.agentPhone</DataPath>
+																			<TitleTextColor>style:CRM_ЦветЗаголовка</TitleTextColor>
+																			<Width>18</Width>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>18</MaxWidth>
+																			<ContextMenu name="agentPhoneКонтекстноеМеню" id="458"/>
+																			<ExtendedTooltip name="agentPhoneРасширеннаяПодсказка" id="459"/>
 																		</InputField>
 																		<InputField name="ПредполагаемаяСтоимостьОН" id="61">
 																			<DataPath>Объект.ПредполагаемаяСтоимостьОН</DataPath>
@@ -2391,6 +2404,10 @@
 					<v8:content>Обновление сделки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ОбновлениеСделки</Action>
 		</Command>
 		<Command name="СозданиеАнкеты" id="23">
@@ -2421,6 +2438,10 @@
 					<v8:content>Обновление анкеты</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ОбновлениеАнкеты</Action>
 		</Command>
 		<Command name="УдалениеАнкетыСозаемщика" id="25">
@@ -2482,7 +2503,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПолучитьДанныеСделки</Action>
@@ -2500,6 +2521,10 @@
 					<v8:content>Получить данные анкеты</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ПолучитьДанныеАнкеты</Action>
 		</Command>
 		<Command name="ОтправитьДокументы" id="32">
@@ -2590,6 +2615,10 @@
 					<v8:content>Обновить документ</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ОбновитьДокумент</Action>
 		</Command>
 	</Commands>
