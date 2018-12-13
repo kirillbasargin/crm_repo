@@ -9,6 +9,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Popup name="ЗаявкаНаКредит" id="187">
+				<Visible>false</Visible>
 				<UserVisible>
 					<xr:Common>false</xr:Common>
 					<xr:Value name="Role.Администрирование">true</xr:Value>
@@ -48,26 +49,31 @@
 					</Button>
 					<Button name="ФормаОтказ" id="259">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.Отказ</CommandName>
 						<ExtendedTooltip name="ФормаОтказРасширеннаяПодсказка" id="260"/>
 					</Button>
 					<Button name="ФормаОбновитьЗаявку" id="201">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ИзменитьЗаявку</CommandName>
 						<ExtendedTooltip name="ФормаОбновитьЗаявкуРасширеннаяПодсказка" id="202"/>
 					</Button>
 					<Button name="ФормаДобавитьДокуметнты" id="197">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ДобавитьДокуметнты</CommandName>
 						<ExtendedTooltip name="ФормаДобавитьДокуметнтыРасширеннаяПодсказка" id="198"/>
 					</Button>
 					<Button name="ФормаДобавитьКомментарии" id="199">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ДобавитьКомментарии</CommandName>
 						<ExtendedTooltip name="ФормаДобавитьКомментарииРасширеннаяПодсказка" id="200"/>
 					</Button>
 					<Button name="ФормаПолучиьДанныеОЗаявке" id="203">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ПолучитьДанныеОЗаявке</CommandName>
 						<ExtendedTooltip name="ФормаПолучиьДанныеОЗаявкеРасширеннаяПодсказка" id="204"/>
 					</Button>
@@ -90,21 +96,25 @@
 				<ChildItems>
 					<Button name="ФормаАвторизация" id="189">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.Авторизация</CommandName>
 						<ExtendedTooltip name="ФормаАвторизацияРасширеннаяПодсказка" id="190"/>
 					</Button>
 					<Button name="ФормаРазлогиниться" id="277">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.Разлогиниться</CommandName>
 						<ExtendedTooltip name="ФормаРазлогинитьсяРасширеннаяПодсказка" id="278"/>
 					</Button>
 					<Button name="ФормаСоздатьЧерновик" id="91">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.СоздатьЧерновик</CommandName>
 						<ExtendedTooltip name="ФормаСоздатьЧерновикРасширеннаяПодсказка" id="92"/>
 					</Button>
 					<Button name="ФормаИзменитьСтатус" id="213">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ИзменитьСтатус</CommandName>
 						<ExtendedTooltip name="ФормаИзменитьСтатусРасширеннаяПодсказка" id="214"/>
 					</Button>
@@ -116,6 +126,7 @@
 					</Button>
 					<Button name="ФормаДоступныеАгенты" id="224">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ДоступныеАгенты</CommandName>
 						<ExtendedTooltip name="ФормаДоступныеАгентыРасширеннаяПодсказка" id="225"/>
 					</Button>
@@ -123,6 +134,11 @@
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ПроверитьНастройкуПользователя</CommandName>
 						<ExtendedTooltip name="ФормаПроверитьНастройкуПользователяРасширеннаяПодсказка" id="264"/>
+					</Button>
+					<Button name="АнкетыПолучитьСтруктуруАнкеты" id="447">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПолучитьСтруктуруАнкеты</CommandName>
+						<ExtendedTooltip name="АнкетыПолучитьСтруктуруАнкетыРасширеннаяПодсказка" id="448"/>
 					</Button>
 				</ChildItems>
 			</Popup>
@@ -155,11 +171,35 @@
 					<Button name="ФормаОбновлениеСделки" id="406">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ОбновлениеСделки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Обновить заявку</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ФормаОбновлениеСделкиРасширеннаяПодсказка" id="407"/>
+					</Button>
+					<Button name="ФормаОтправитьЗаявкуOnLine1" id="449">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.ОтправитьЗаявкуOnLine</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отправить заявку</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаОтправитьЗаявкуOnLine1РасширеннаяПодсказка" id="450"/>
 					</Button>
 					<Button name="ФормаОтправитьСделку" id="438">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ОтправитьСделку</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отправить заявку</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ФормаОтправитьСделкуРасширеннаяПодсказка" id="439"/>
 					</Button>
 					<Button name="ФормаИзменитьСтатусСделки" id="436">
@@ -171,6 +211,12 @@
 					<Button name="ФормаПолучитьДанныеСделки" id="425">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ПолучитьДанныеСделки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Получить данные заявки</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ФормаПолучитьДанныеСделкиРасширеннаяПодсказка" id="426"/>
 					</Button>
 				</ChildItems>
@@ -981,31 +1027,43 @@
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Объект.Анкеты</DataPath>
 															<RowFilter xsi:nil="true"/>
-															<ContextMenu name="АнкетыКонтекстноеМеню" id="323"/>
-															<AutoCommandBar name="АнкетыКоманднаяПанель" id="324">
+															<ContextMenu name="АнкетыКонтекстноеМеню" id="323">
 																<ChildItems>
-																	<Popup name="АнкетыПодменюАнкетДомКлик" id="423">
+																	<Popup name="АнкетыКонтекстноеМенюГруппаДомКлик" id="453">
 																		<Title>
 																			<v8:item>
 																				<v8:lang>ru</v8:lang>
 																				<v8:content>ДомКлик</v8:content>
 																			</v8:item>
 																		</Title>
-																		<ExtendedTooltip name="АнкетыПодменюАнкетДомКликРасширеннаяПодсказка" id="424"/>
+																		<ToolTip>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Анкеты контекстное меню группа дом клик</v8:content>
+																			</v8:item>
+																		</ToolTip>
+																		<ExtendedTooltip name="АнкетыКонтекстноеМенюГруппаДомКликРасширеннаяПодсказка" id="454"/>
 																		<ChildItems>
-																			<Button name="АнкетыСозданиеАнкеты" id="408">
-																				<Type>CommandBarButton</Type>
-																				<CommandName>Form.Command.СозданиеАнкеты</CommandName>
-																				<ExtendedTooltip name="АнкетыСозданиеАнкетыРасширеннаяПодсказка" id="409"/>
-																			</Button>
 																			<Button name="ФормаОбновлениеАнкеты" id="404">
 																				<Type>CommandBarButton</Type>
 																				<CommandName>Form.Command.ОбновлениеАнкеты</CommandName>
+																				<Title>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Обновить анкету</v8:content>
+																					</v8:item>
+																				</Title>
 																				<ExtendedTooltip name="ФормаОбновлениеАнкетыРасширеннаяПодсказка" id="405"/>
 																			</Button>
 																			<Button name="АнкетыУдалениеАнкетыСозаемщика" id="410">
 																				<Type>CommandBarButton</Type>
 																				<CommandName>Form.Command.УдалениеАнкетыСозаемщика</CommandName>
+																				<Title>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Удалить анкету созаемщика</v8:content>
+																					</v8:item>
+																				</Title>
 																				<ExtendedTooltip name="АнкетыУдалениеАнкетыСозаемщикаРасширеннаяПодсказка" id="411"/>
 																			</Button>
 																			<Button name="АнкетыОтправитьПереотправитьСМСКлиенту" id="434">
@@ -1023,10 +1081,31 @@
 																				<CommandName>Form.Command.ПолучитьДанныеАнкеты</CommandName>
 																				<ExtendedTooltip name="АнкетыПолучитьДанныеАнкетыРасширеннаяПодсказка" id="428"/>
 																			</Button>
-																			<Button name="АнкетыПолучитьСтруктуруАнкеты" id="447">
+																		</ChildItems>
+																	</Popup>
+																</ChildItems>
+															</ContextMenu>
+															<AutoCommandBar name="АнкетыКоманднаяПанель" id="324">
+																<ChildItems>
+																	<Popup name="АнкетыПодменюАнкетДомКлик" id="423">
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>ДомКлик</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ExtendedTooltip name="АнкетыПодменюАнкетДомКликРасширеннаяПодсказка" id="424"/>
+																		<ChildItems>
+																			<Button name="АнкетыСозданиеАнкеты" id="408">
 																				<Type>CommandBarButton</Type>
-																				<CommandName>Form.Command.ПолучитьСтруктуруАнкеты</CommandName>
-																				<ExtendedTooltip name="АнкетыПолучитьСтруктуруАнкетыРасширеннаяПодсказка" id="448"/>
+																				<CommandName>Form.Command.СозданиеАнкеты</CommandName>
+																				<Title>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Отправить анкеты</v8:content>
+																					</v8:item>
+																				</Title>
+																				<ExtendedTooltip name="АнкетыСозданиеАнкетыРасширеннаяПодсказка" id="409"/>
 																			</Button>
 																		</ChildItems>
 																	</Popup>
@@ -1178,7 +1257,44 @@
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Объект.ПрикрепленныеФайлы</DataPath>
 															<RowFilter xsi:nil="true"/>
-															<ContextMenu name="ПрикрепленныеФайлыКонтекстноеМеню" id="103"/>
+															<ContextMenu name="ПрикрепленныеФайлыКонтекстноеМеню" id="103">
+																<ChildItems>
+																	<Popup name="ПрикрепленныеФайлыКонтекстноеМенюГруппаДомКлик" id="455">
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>ДомКлик</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ToolTip>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Прикрепленные файлы контекстное меню группа дом клик</v8:content>
+																			</v8:item>
+																		</ToolTip>
+																		<ExtendedTooltip name="ПрикрепленныеФайлыКонтекстноеМенюГруппаДомКликРасширеннаяПодсказка" id="456"/>
+																		<ChildItems>
+																			<Button name="ПрикрепленныеФайлыУдалениеДокументов" id="418">
+																				<Type>CommandBarButton</Type>
+																				<OnlyInAllActions>true</OnlyInAllActions>
+																				<CommandName>Form.Command.УдалениеДокументов</CommandName>
+																				<Title>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Удалить документ</v8:content>
+																					</v8:item>
+																				</Title>
+																				<ExtendedTooltip name="ПрикрепленныеФайлыУдалениеДокументовРасширеннаяПодсказка" id="419"/>
+																			</Button>
+																			<Button name="ПрикрепленныеФайлыОбновитьДокумент" id="451">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ОбновитьДокумент</CommandName>
+																				<ExtendedTooltip name="ПрикрепленныеФайлыОбновитьДокументРасширеннаяПодсказка" id="452"/>
+																			</Button>
+																		</ChildItems>
+																	</Popup>
+																</ChildItems>
+															</ContextMenu>
 															<AutoCommandBar name="ПрикрепленныеФайлыКоманднаяПанель" id="104">
 																<Autofill>false</Autofill>
 																<ChildItems>
@@ -1288,12 +1404,6 @@
 																				<OnlyInAllActions>true</OnlyInAllActions>
 																				<CommandName>Form.Command.ОтправитьДокументы</CommandName>
 																				<ExtendedTooltip name="ПрикрепленныеФайлыОтправитьДокументыРасширеннаяПодсказка" id="433"/>
-																			</Button>
-																			<Button name="ПрикрепленныеФайлыУдалениеДокументов" id="418">
-																				<Type>CommandBarButton</Type>
-																				<OnlyInAllActions>true</OnlyInAllActions>
-																				<CommandName>Form.Command.УдалениеДокументов</CommandName>
-																				<ExtendedTooltip name="ПрикрепленныеФайлыУдалениеДокументовРасширеннаяПодсказка" id="419"/>
 																			</Button>
 																		</ChildItems>
 																	</Popup>
@@ -2371,6 +2481,10 @@
 					<v8:content>Получить данные сделки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ПолучитьДанныеСделки</Action>
 		</Command>
 		<Command name="ПолучитьДанныеАнкеты" id="31">
