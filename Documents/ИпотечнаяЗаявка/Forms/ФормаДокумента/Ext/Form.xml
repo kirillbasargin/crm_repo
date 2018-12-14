@@ -157,13 +157,18 @@
 				</ToolTip>
 				<ExtendedTooltip name="СделкаДомКликРасширеннаяПодсказка" id="401"/>
 				<ChildItems>
+					<Button name="ФормаСоздатьЧерновикСделки" id="460">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьЧерновикСделки</CommandName>
+						<ExtendedTooltip name="ФормаСоздатьЧерновикСделкиРасширеннаяПодсказка" id="461"/>
+					</Button>
 					<Button name="ФормаСозданиеСделки" id="402">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.СозданиеСделки</CommandName>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Создать черновик</v8:content>
+								<v8:content>Создать сделку</v8:content>
 							</v8:item>
 						</Title>
 						<ExtendedTooltip name="ФормаСозданиеСделкиРасширеннаяПодсказка" id="403"/>
@@ -2620,6 +2625,21 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОбновитьДокумент</Action>
+		</Command>
+		<Command name="СоздатьЧерновикСделки" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать черновик</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать черновик сделки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЧерновикСделки</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
